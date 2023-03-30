@@ -1,16 +1,42 @@
-.card {
+.CardBlue {
     width: 100vh;
     height: 15%;
-    background-color: white;
+    background-color: blue;
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
     text-align: center;
-    padding: 20px;
+    padding: 10px;
     margin-left: 25%;
-    color: blue;
+    color: white;
     margin-bottom: 10px;
     
   }
+.CardRed{
+  width: 100vh;
+    height: 15%;
+    background-color: red;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+    text-align: center;
+    padding: 10px;
+    margin-left: 25%;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.CardCumple{
+  width: 100vh;
+    height: 15%;
+    background-color: yellow;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+    text-align: center;
+    padding: 10px;
+    margin-left: 25%;
+    color: white;
+    margin-bottom: 10px;
+}
+
   
   .card img {
     display: block;
