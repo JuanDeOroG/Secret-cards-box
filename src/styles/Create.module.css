@@ -1,0 +1,7 @@
+.Create{
+    margin: auto;
+    background-image: url("../../public/bgs/rainbow-vortex.svg");
+    background-size: cover;
+    height: 200vh;
+    color: white;
+}
