@@ -1,0 +1,7 @@
+.romanticBg{
+    background-image:url("../../public/bgs/heartBg.svg");
+    margin: auto;
+    background-size: cover;
+    height: 200vh;
+    color: black;
+}
