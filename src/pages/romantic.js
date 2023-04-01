@@ -15,12 +15,13 @@ export default function Romantic(){
             <button onClick={function(){
                 setNumero(numero + parseInt(cantidadTarjeta.value))
             }} >Poner tarjetas</button>
- 
+            
             {
                 numero != 0 ? (
                     <RomanticCard cantidad={numero} ></RomanticCard>) : (<p>Dele al boton</p>
                 )
             }
+            
             
         </div>
     )
