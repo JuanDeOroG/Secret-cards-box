@@ -6,7 +6,7 @@ import Layout, { Section } from '../../components/Section'
 import Card from '../../components/Card'
 
 import Link from 'next/link'
-import axios from 'axios'
+// import axios from 'axios'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -27,14 +27,14 @@ export default function Home({data}) {
   )
 }
 
-async function getData(){
-  const response = await axios.get("http://localhost:3000/api/vername")
-  return response.data
-}
+// async function getData(){
+//   const response = await axios.get("http://localhost:3000/api/vername")
+//   return response.data
+// }
 
-export async function getServerSideProps(context){
-  const data = await getData()
+// export async function getServerSideProps(context){
+//   const data = await getData()
 
-  return {props:{data}}
+//   return {props:{data}}
 
-}
+// }

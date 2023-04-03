@@ -14,7 +14,7 @@ export default function RomanticCard({cantidad}){
                 <label>
                     Tu nombre:
                 </label>
-            <input type="text" name="name"  required />
+            <input type="text" name="name"   />
             </div>
             {etiquetas.map((etiqueta)=>(
                 
@@ -22,9 +22,9 @@ export default function RomanticCard({cantidad}){
                     <img className={styles.cardimage} src="https://via.placeholder.com/150" alt="Imagen de ejemplo" class="card-image"/>
                     <div className={styles.cardcontent}>
                         <label>Titulo de tarjeta:</label>
-                        <input type="text" name={`input1${etiqueta}` } required/>
+                        <input type="text" name={`input1${etiqueta}` } />
                         <label >Frase:</label> <br></br>
-                        <textarea type="text" name={`input2${etiqueta}`}required></textarea>
+                        <textarea type="text" name={`input2${etiqueta}`}></textarea>
                     </div>
                 </div>   
             ))}
@@ -33,6 +33,7 @@ export default function RomanticCard({cantidad}){
             <button type="submit">
                 Guardar caja
             </button>
+            <input type="text" name="cantidad" value={cantidad}/>
             </div>
             
         </form>

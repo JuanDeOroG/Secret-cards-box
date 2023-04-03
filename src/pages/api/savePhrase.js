@@ -6,8 +6,20 @@ export default function savePhrase(req,res){
     let tarjetas = {}
 
     if(req.method.toLowerCase()=="post"){
-        console.log(req.body.name)
 
+        if(parseInt(req.body.cantidad)<=6){
+
+           console.log(typeof req.body.cantidad)
+            }
+
+
+
+
+
+
+        }
+
+       
 
 
     }
@@ -15,4 +27,4 @@ export default function savePhrase(req,res){
     
     
     
-}
+
