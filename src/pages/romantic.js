@@ -11,10 +11,20 @@ export default function Romantic(){
             <h3>Put the cards inside the Romantic Box</h3>
 
             <label className={styles.label} for="cantidad">Digite la cantidad de tarjetas que quiere</label>
-            <input className={styles.input} name="cantidadTarjeta" id="cantidadTarjeta" type="number" placeholder="Digite la cantidad de tarjetas" />
-            <button onClick={function(){
-                setNumero(numero + parseInt(cantidadTarjeta.value))
-            }} >Poner tarjetas</button>
+            <input className={styles.input} name="cantidadTarjeta" id="cantidadTarjeta" type="number" placeholder="Cantidad menor o igual a 6" />
+
+
+            {
+                parseInt(cantidadTarjeta.value)<=6 ? (<button onClick={function(){
+                    setNumero(numero + parseInt(cantidadTarjeta.value))
+                }} >Poner tarjetas</button>) : (
+                    <button onClick={function(){
+                        alert("El numero de tarjetas es maximo de 6")
+                    }} >Poner tarjetas</button>
+                )
+            }
+            
+           
             
             {
                 numero != 0 ? (
