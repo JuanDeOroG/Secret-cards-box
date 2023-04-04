@@ -15,12 +15,16 @@ export default function Romantic(){
 
 
             {
-                parseInt(cantidadTarjeta.value)<=6 ? (<button onClick={function(){
-                    setNumero(numero + parseInt(cantidadTarjeta.value))
+                numero<=6 ? (<button onClick={function(){
+                    if(numero+parseInt(cantidadTarjeta.value)>6){
+                        alert("Sólo se permite un maximo de 6 tarjetas")
+                    }else{setNumero(numero + parseInt(cantidadTarjeta.value))}
+                    
                 }} >Poner tarjetas</button>) : (
                     <button onClick={function(){
-                        alert("El numero de tarjetas es maximo de 6")
+                        alert("Digite la cantidad de tarjetas")
                     }} >Poner tarjetas</button>
+                    
                 )
             }
             
