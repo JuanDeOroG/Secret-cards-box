@@ -11,10 +11,10 @@ export default function RomanticCard({cantidad}){
     return(
         <form action="/api/savePhrase" method="post" className={styles.comodarCartas}>
             <div>
-                <label>
-                    Tu nombre:
-                </label>
-            <input type="text" name="name"   />
+            <label>Tu nombre: </label>
+            <input type="text" name="name"   /> <br></br>
+            <label>BoxName: </label>
+            <input type="text" name="boxname"   />
             </div>
             {etiquetas.map((etiqueta)=>(
                 
