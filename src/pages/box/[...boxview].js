@@ -4,14 +4,16 @@ import axios from "axios";
 export default function boxview({cajaBuscada}){
 
     
-    console.log("AAAAAA",cajaBuscada)
-   
-    
-    for( x of cajaBuscada.results){
-        console.log("KASJSAK", x)
+    console.log("AAAAAA",cajaBuscada.results)
+
+    for(let x of cajaBuscada.results){
+        console.log(x.name)
     }
     
 
+    
+    
+    
 
     return(<>
     {}aaa</>)
