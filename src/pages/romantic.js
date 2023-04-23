@@ -1,5 +1,5 @@
 import styles from "@/styles/Romantic.module.css"
-import { useEffect, useState } from "react"
+import {  useState } from "react"
 import RomanticCard from "../../components/RomanticCard"
 
 export default function Romantic(){

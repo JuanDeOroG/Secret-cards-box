@@ -131,7 +131,7 @@ export default function savePhrase(req,res){
                     console.log("No se pudo mandar nada de las tarjetas a la base de datos")
                     break;
             }
-            res.send("La caja y las tarjetas fueron guardadas correctamente. <a href='/boxview?'>Click aqui para ver la caja creada</a>")
+            res.send(`La caja y las tarjetas fueron guardadas correctamente. <a href='http://localhost:3000/box/${boxname}>Click aqui para ver la caja creada</a>`)
 
 
 
