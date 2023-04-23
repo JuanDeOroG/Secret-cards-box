@@ -90,48 +90,141 @@ export default function savePhrase(req,res){
                 case "3":
                     
                     
-                    conexion.query(`insert into phrase(content, title, box_name) values('${content1}','${title1}','${boxname}');insert into phrase(content, title, box_name) values('${content2}','${title2}','${boxname}';insert into phrase(content, title, box_name) values('${content3}','${title3}','${boxname}';`,async (error)=>{
-                        if(error){
-                            console.log(error)
-                        }
-                    })
+                conexion.query(`insert into phrase(content, title, box_name) values('${content1}','${title1}','${boxname}')`, async (error)=>{
+                    if(error){
+                        console.log(error)
+                    }
+                });
+                
+                conexion.query(`insert into phrase(content, title, box_name) values('${content2}','${title2}','${boxname}')`, async (error)=>{
+                    if(error){
+                        console.log(error)
+                    }
+                });
+                
+                conexion.query(`insert into phrase(content, title, box_name) values('${content3}','${title3}','${boxname}')`, async (error)=>{
+                    if(error){
+                        console.log(error)
+                    }
+                });
+                
+                
                     
                     break;
                 case "4":
                     
                     
-                    conexion.query(`insert into phrase(content, title, box_name) values('${content1}','${title1}','${boxname}');insert into phrase(content, title, box_name) values('${content2}','${title2}','${boxname}';insert into phrase(content, title, box_name) values('${content3}','${title3}','${boxname}';insert into phrase(content, title, box_name) values('${content4}','${title4}','${boxname}';`,async (error)=>{
-                        if(error){
-                            console.log(error)
-                        }
-                    })
+                conexion.query(`insert into phrase(content, title, box_name) values('${content1}','${title1}','${boxname}')`, async (error)=>{
+                    if(error){
+                        console.log(error)
+                    }
+                });
+                
+                conexion.query(`insert into phrase(content, title, box_name) values('${content2}','${title2}','${boxname}')`, async (error)=>{
+                    if(error){
+                        console.log(error)
+                    }
+                });
+                
+                conexion.query(`insert into phrase(content, title, box_name) values('${content3}','${title3}','${boxname}')`, async (error)=>{
+                    if(error){
+                        console.log(error)
+                    }
+                });
+                
+                conexion.query(`insert into phrase(content, title, box_name) values('${content4}','${title4}','${boxname}')`, async (error)=>{
+                    if(error){
+                        console.log(error)
+                    }
+                });
+                
+                
+                
                     
                     break;
                 case "5":
                     
                     
-                    conexion.query(`insert into phrase(content, title, box_name) values('${content1}','${title1}','${boxname}');insert into phrase(content, title, box_name) values('${content2}','${title2}','${boxname}';insert into phrase(content, title, box_name) values('${content3}','${title3}','${boxname}';insert into phrase(content, title, box_name) values('${content4}','${title4}','${boxname}';insert into phrase(content, title, box_name) values('${content5}','${title5}','${boxname}';`,async (error)=>{
-                        if(error){
-                            console.log(error)
-                        }
-                    })
+                conexion.query(`insert into phrase(content, title, box_name) values('${content1}','${title1}','${boxname}')`, async (error)=>{
+                    if(error){
+                        console.log(error)
+                    }
+                });
+                
+                conexion.query(`insert into phrase(content, title, box_name) values('${content2}','${title2}','${boxname}')`, async (error)=>{
+                    if(error){
+                        console.log(error)
+                    }
+                });
+                
+                conexion.query(`insert into phrase(content, title, box_name) values('${content3}','${title3}','${boxname}')`, async (error)=>{
+                    if(error){
+                        console.log(error)
+                    }
+                });
+                
+                conexion.query(`insert into phrase(content, title, box_name) values('${content4}','${title4}','${boxname}')`, async (error)=>{
+                    if(error){
+                        console.log(error)
+                    }
+                });
+                
+                conexion.query(`insert into phrase(content, title, box_name) values('${content5}','${title5}','${boxname}')`, async (error)=>{
+                    if(error){
+                        console.log(error)
+                    }
+                });
+                
+                
+                
                     
                     break;
                 case "6":
                     
                     
-                    conexion.query(`insert into phrase(content, title, box_name) values('${content1}','${title1}','${boxname}');insert into phrase(content, title, box_name) values('${content2}','${title2}','${boxname}';insert into phrase(content, title, box_name) values('${content3}','${title3}','${boxname}';insert into phrase(content, title, box_name) values('${content4}','${title4}','${boxname}';insert into phrase(content, title, box_name) values('${content5}','${title5}','${boxname}';insert into phrase(content, title, box_name) values('${content6}','${title6}','${boxname}';`,async (error)=>{
-                        if(error){
-                            console.log(error)
-                        }
-                    })
+                conexion.query(`insert into phrase(content, title, box_name) values('${content1}','${title1}','${boxname}')`, async (error)=>{
+                    if(error){
+                        console.log(error)
+                    }
+                });
+                
+                conexion.query(`insert into phrase(content, title, box_name) values('${content2}','${title2}','${boxname}')`, async (error)=>{
+                    if(error){
+                        console.log(error)
+                    }
+                });
+                
+                conexion.query(`insert into phrase(content, title, box_name) values('${content3}','${title3}','${boxname}')`, async (error)=>{
+                    if(error){
+                        console.log(error)
+                    }
+                });
+                
+                conexion.query(`insert into phrase(content, title, box_name) values('${content4}','${title4}','${boxname}')`, async (error)=>{
+                    if(error){
+                        console.log(error)
+                    }
+                });
+                
+                conexion.query(`insert into phrase(content, title, box_name) values('${content5}','${title5}','${boxname}')`, async (error)=>{
+                    if(error){
+                        console.log(error)
+                    }
+                });
+                
+                conexion.query(`insert into phrase(content, title, box_name) values('${content6}','${title6}','${boxname}')`, async (error)=>{
+                    if(error){
+                        console.log(error)
+                    }
+                });
+                
                     
                     break;
                 default:
                     console.log("No se pudo mandar nada de las tarjetas a la base de datos")
                     break;
             }
-            res.send(`La caja y las tarjetas fueron guardadas correctamente. <a href='http://localhost:3000/box/${boxname}>Click aqui para ver la caja creada</a>`)
+            res.send(`La caja y las tarjetas fueron guardadas correctamente. <a href='http://localhost:3000/box/${boxname}'>Click aqui para ver la caja creada</a>`)
 
 
 

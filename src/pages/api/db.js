@@ -6,6 +6,7 @@ const conexion = pool.createPool({
     user:"root",
     password:"",
     database:"secretcards",
+    multipleStatements:true
 })
 
 conexion.getConnection((error)=>{
