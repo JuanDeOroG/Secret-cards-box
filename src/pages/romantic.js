@@ -11,7 +11,7 @@ export default function Romantic(){
             <h3>Put the cards inside the Romantic Box</h3>
 
             <label className={styles.label} for="cantidad">Digite la cantidad de tarjetas que quiere</label>
-            <input className={styles.input} name="cantidadTarjeta" id="cantidadTarjeta" type="number" placeholder="Cantidad menor o igual a 6" />
+            <input className={styles.input} name="cantidadTarjeta" id="cantidadTarjeta" type="number" placeholder="Cantidad menor o igual a 6" max={6} />
 
 
             {

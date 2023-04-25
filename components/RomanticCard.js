@@ -7,14 +7,19 @@ export default function RomanticCard({cantidad}){
         etiquetas.push(x)
 
     }
+
+    
+     
     
     return(
-        <form action="/api/savePhrase" method="post" className={styles.comodarCartas}>
+        <form id="formCards" action="/api/savePhrase" method="post" className={styles.comodarCartas}>
             <div>
-            <label>Tu nombre: </label>
+            <label>Choose one Username: </label>
             <input type="text" name="name"   /> <br></br>
             <label>BoxName: </label>
-            <input type="text" name="boxname"   />
+            <input type="text" name="boxname" id="boxname"  /><br></br>
+            <label>Secret Key: </label>
+            <input type="text" name="secretKey" id="secretKey"   />
             </div>
             {etiquetas.map((etiqueta)=>(
                 
@@ -30,7 +35,15 @@ export default function RomanticCard({cantidad}){
             ))}
 
             <div>         
-            <button type="submit">
+            <button type="button" onClick={()=>{
+        const regex = /^[a-zA-Z0-9]*$/;
+        if(regex.test(boxname.value)){
+            formCards.submit()
+        }else{
+            alert("Don't use special signals and white spaces")
+        }
+        
+    }}>
                 Guardar caja
             </button>
             <input type="text" name="cantidad" value={cantidad}/>

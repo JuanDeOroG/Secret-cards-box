@@ -12,6 +12,7 @@ export default function savePhrase(req,res){
 
             const boxname= req.body.boxname
             const name= req.body.name
+            const secretKey= req.body.secretKey
             // Revisar si el usuario ya existe, si no existe, registrarlo
             conexion.query(`select * from users where name = '${name}' `,async (error, results)=>{
                 if(error){
@@ -34,7 +35,7 @@ export default function savePhrase(req,res){
                 if(results.length !=0){
                     res.send("Eliga otro nombre de caja porque ya existe")
                 }else{
-                    conexion.query(`insert into box (boxname, username) values ('${boxname}','${name}')`,async (error)=>{
+                    conexion.query(`insert into box (boxname, username, password) values ('${boxname}','${name}','${secretKey}')`,async (error)=>{
                         if(error){console.log(error)}
                     })
                     

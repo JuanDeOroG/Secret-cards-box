@@ -1,0 +1,47 @@
+<style>
+    .caja {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin: 50px auto;
+  background: green;
+  perspective: 600px;
+}
+
+/* Estilo para la tapa */
+.tapa {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background-color: #333;
+}
+
+/* Estilo para el contenido */
+.contenido {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background-color: gray;
+  transform-origin: bottom;
+  transform: rotateX(100deg);
+  transition: transform .4s ease-in-out;
+
+}
+
+/* Animación para abrir la caja */
+.caja:hover .contenido {
+  transform: rotateX(0);
+}
+</style>
+
+<div class="caja">
+    <div class="tapa"></div>
+    <div class="contenido">
+      <h1>¡Hola, mundo!</h1>
+      <p>Bienvenido a mi animación.</p>
+    </div>
+  </div>
