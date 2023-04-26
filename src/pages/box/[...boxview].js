@@ -31,10 +31,6 @@ export default function boxview({cajaBuscada}){
             <p>********</p></div>)
 
             }
-            
-
-    
-    
         </div>
     ))
     }   </>)
@@ -43,6 +39,7 @@ export default function boxview({cajaBuscada}){
 }
 
 export async function getServerSideProps(context){
+    console.log("Context: ",context)
     const { params } = context;
     const response = await axios.post('http://localhost:3000/api/boxes', {cajaBuscada:params.boxview[0]});
 
