@@ -4,16 +4,7 @@ import axios from "axios";
 import { useState } from "react";
 export default function boxview({cajaBuscada}){
 
-    
-    console.log("AAAAAA",cajaBuscada.results)
-
     const [mostrar, setMostrar] = useState (false)
-    
-
-    
-    
-    
-
     return(<>
 
     <h2>Chest: {cajaBuscada.results[0].name}</h2>
@@ -34,7 +25,6 @@ export default function boxview({cajaBuscada}){
         </div>
     ))
     }   </>)
-    
     //si voy a esta url se muestra el valor digitdo en la url http://localhost:3000/api/box/233
 }
 

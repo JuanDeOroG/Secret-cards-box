@@ -1,4 +1,7 @@
 import styles from "@/styles/RomanticCard.module.css"
+import { useState } from "react"
+import { useRouter } from "next/router"
+import axios from "axios"
 
 
 export default function RomanticCard({cantidad}){
@@ -7,17 +10,25 @@ export default function RomanticCard({cantidad}){
         etiquetas.push(x)
 
     }
+    const [inputBoxname, setInputBoxname] = useState("")
+    const [existe, setExiste] = useState(false)
 
-    
-     
-    
+    const router = useRouter()
+
+    async function ifExist(){
+        const res = await axios.post(`http://localhost:3000/api/ifexist`, {boxname:inputBoxname})
+        const data = res.data
+        console.log(data.result)
+        setExiste(data.result)
+    }
     return(
         <form id="formCards" action="/api/savePhrase" method="post" className={styles.comodarCartas}>
             <div>
             <label>Choose one Username: </label>
             <input type="text" name="name"   /> <br></br>
-            <label>BoxName: </label>
-            <input type="text" name="boxname" id="boxname"  /><br></br>
+            
+            <label onClick={ifExist}>BoxName: </label>
+            <input type="text" name="boxname" id="boxname" onChange={()=>setInputBoxname(boxname.value)}  /><br></br>
             <label>Secret Key: </label>
             <input type="text" name="secretKey" id="secretKey"   />
             </div>
@@ -38,9 +49,10 @@ export default function RomanticCard({cantidad}){
             <button type="button" onClick={()=>{
         const regex = /^[a-zA-Z0-9]*$/;
         if(regex.test(boxname.value)){
-            formCards.submit()
+            if(existe == false){formCards.submit()}else{alert("The boxname already exist, type a different boxname")}
+            
         }else{
-            alert("Don't use special signals and white spaces")
+            alert("Don't use punctuation marks and white spaces")
         }
         
     }}>
@@ -54,3 +66,4 @@ export default function RomanticCard({cantidad}){
         
     )
 }
+
